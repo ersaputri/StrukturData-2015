@@ -1,38 +1,31 @@
-
+import java.util.Date;
 /**
  * Write a description of class Vector3D here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Vector3D
+public class Vector4D extends Vector3D
 {
     // instance variables - replace the example below with your own
-    private double x,y,z;
+   // private double x,y,z;
+    private Date t;
 
     /**
      * Constructor for objects of class Vector3D
      */
-    public Vector3D(double x, double y, double z)
+    public Vector4D(double x, double y, double z, Date t)
     {
         // initialise instance variables
-        
-        this.x = x;
-        this.y = y;
-        this.z =z;
+        super (x,y,z);
+        this.t = t;
     }
 
-    public double getX (){
-        return x;
+    public Date getT (){
+        return t;
     }
 
-    public double getY(){
-        return y;
-    }
 
-    public double getZ (){
-        return z;
-    }
+
 }
-
 
