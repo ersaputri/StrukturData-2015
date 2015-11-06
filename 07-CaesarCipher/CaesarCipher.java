@@ -69,5 +69,16 @@ public class CaesarCipher {
         }
 
     }
-}
 
+    public static void main (String [] args){
+        try{
+            CaesarCipher baru = new CaesarCipher(3);
+            baru.enkripsi ("sumber.txt", "enkripsi.txt");
+            baru.dekripsi ("sumber.txt","dekripsi.txt");
+        }
+        catch (IOException kesalahan){
+            System.out.printf("Terjadi Kesalahan %s", kesalahan);
+        }
+    }
+
+}
