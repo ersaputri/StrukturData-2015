@@ -13,7 +13,7 @@ public class prime
      * Constructor for objects of class prime
      */
    public prime()
-   {   int angka = 150;
+   {   int angka = 100000;
        
        for(int j=1;j<angka;j++){
        int periksa=0;
